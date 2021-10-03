@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .button {
+        @apply text-gray-400 text-sm font-extralight border px-3 py-1 rounded-md cursor-pointer hover:shadow-lg active:hover:scale-95 active:bg-[#ff4d00] transition transform duration-100 ease-out 
+    }
+}
