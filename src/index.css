@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer components{
     .button {
-        @apply text-gray-400 text-sm font-extralight border px-3 py-1 rounded-md cursor-pointer hover:shadow-lg active:hover:scale-95 active:bg-[#ff4d00] transition transform duration-100 ease-out 
+        @apply text-gray-400 text-sm font-extralight border px-3 py-1 rounded-md cursor-pointer hover:shadow-lg active:hover:scale-95  transition transform duration-100 ease-out ;
     }
+
+    .topOne {
+        @apply w-full flex justify-center;
+    }
+
+    .selector {
+        @apply px-2 py-1 mx-1 cursor-pointer hover:shadow-lg active:hover:scale-95 transition transform duration-100 ease-out rounded-lg ;
+    }
+
+    .menu1 {
+        @apply flex items-center py-2 cursor-pointer hover:bg-gray-50 hover:scale-110 ;
+    }
+
+    .menu2 {
+        @apply  border-2 rounded-lg h-4 ;
+    }
+
+    .menu3 {
+        @apply h-5 pl-8 text-gray-400;
+    }
+
 }
