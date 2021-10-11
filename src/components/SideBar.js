@@ -8,7 +8,7 @@ function SideBar({renderComponent}) {
     console.log(select)
 
     return (
-        <div className=" w-full flex "> 
+        <div className=" w-full h-[100vh] flex sticky "> 
             <div className=" w-[200px] h-[100vh] flex-col border-r-[1px] border-gray-200 relative ">
 
                 <div className=" pl-10 py-3 ">
@@ -88,7 +88,7 @@ function SideBar({renderComponent}) {
 
                 <img 
                     src={Logo}
-                    className=" absolute bottom-10 "
+                    className=" bottom-10 absolute "
                 />
                 
             </div>

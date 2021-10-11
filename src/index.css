@@ -27,4 +27,14 @@
         @apply h-5 pl-8 text-gray-400;
     }
 
+    .videoButton {
+        @apply rounded-full text-gray-400 hover:scale-105 transform transition;
+    }
+
+    @variants responsive { 
+        .no-scrollbar::-webkit-scrollbar {
+             display: none; 
+            };
+    }
+
 }

@@ -15,23 +15,27 @@ function Home() {
     // console.log(selectedComponent)
 
     return (
-        <div className=" topOne relative ">
-            <div className=" max-w-[1500px] absolute left-0 pl-[1px] ">
-                <div className=" flex justify-evenly ">
-                    <SideBar 
-                        renderComponent ={setSelectedComponent}
-                    />
-                    <div className=" max-w-[1200px] flex-col ">
-                        <Header className=" max-w-[1200px] "/>
-                        { selectedComponent === "Settings" ?  <Settings /> :
-                            selectedComponent === "Latest" ? <Latest /> :
-                            selectedComponent === "Movies" ?  <Movies /> :
-                            selectedComponent === "Series" ? <Series /> :
-                            selectedComponent === "MyList" ? <MyList /> :
-                            <HomeContent />
-                        }
+        <div className=" topOne ">
+            <div className=" max-w-[1500px] ">
+                <div className=" max-w-[1500px] ">
+                    <div className=" flex justify-evenly ">
+                        <SideBar 
+                            renderComponent ={setSelectedComponent}
+                            className=" sticky "
+                        />
+                        <div className=" max-w-[1200px] flex-col ">
+                            <Header className=" max-w-[1200px] "/>
+                            { selectedComponent === "Settings" ?  <Settings /> :
+                                selectedComponent === "Latest" ? <Latest /> :
+                                selectedComponent === "Movies" ?  <Movies /> :
+                                selectedComponent === "Series" ? <Series /> :
+                                selectedComponent === "MyList" ? <MyList /> :
+                                <HomeContent />
+                            }
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     )

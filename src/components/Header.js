@@ -8,7 +8,7 @@ function Header() {
 
 
     return (
-        <div className=" w-[80vw] ">
+        <div className=" w-[80vw] max-w-[1150px] ">
             <div className=" py-1 items-center ">
                 <div className=" px-[30px] flex h-10 items-center justify-between ">
                     
